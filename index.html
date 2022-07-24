@@ -7,45 +7,193 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="header-page">
       <!-- логотип сайта device -->
-      <h1 class="visually-hidden">Device</h1>
-      <img src="#" alt="логотип сайта device.">
+      <h1 class="visually-hidden">Интернет магазин device</h1>
+      <img class="header-logo-device" src="#" alt="логотип сайта device.">
       <!-- форма поиска по каталогу -->
-      <section class="find-device-catalog"></section>
-      <form action="#" method="get">
-        <div class="find-device-wrapper">
-          <img src="" alt="иконка поиска.">
-          <input class="find-device-text" type="text" placeholder="Текст поиска" required>
-          <button class="find-device-btm" type="submit">Найти</button>
-        </div>
-      </form>
-      <!-- иконка и кнопка войти, кнопка так как наверняка появляется новая страница авторизации, так как в макете не прописываться,
-   что происходит при авторизации -->
-      <img src="#" alt="иконка авторизации пользователя на сайте">
-      <h3 class="enter-to-site">Войти</h3>
-      <!-- иконка и кнопка сравнить-->
-      <img src="#" alt="иконка сравнения">
-      <h3 class="compare">Сравнить</h3>
-      <!-- иконка и кнопка корзина-->
-      <img src="#" alt="иконка Корзины">
-      <h3 class="basket">Корзина</h3>
-
+      <nav class="header-catalog-find">
+        <form action="#" method="get">
+          <div class="header-catalog-wrapper">
+            <!-- Иконка поиска будет внутри формы ввода -->
+            <input class="header-catalog-find-text" type="text" placeholder="Текст поиска" required>
+            <button class="header-catalog-find-btm" type="submit">Найти</button>
+          </div>
+        </form>
+      </nav>
+      <!-- иконка и кнопка войти, кнопка так как наверняка появляется новая страница авторизации, так как в макете не прописываться, что происходит при авторизации -->
+      <img class="header-icon-user-authorization" src="#" alt="иконка авторизации пользователя на сайте.">
+      <button class="header-enter-to-site">Войти</button>
+      <!-- следующее навигационное меню -->
+      <nav class="header-compare-recycle">
+        <img class="header-icon-compare" src="#" alt="иконка сравнения">
+        <button class="header-compare-btm">Сравнить</button>
+        <!-- иконка и кнопка корзина-->
+        <img class="header-icon-recycle" src="#" alt="иконка Корзины">
+        <button class="header-recycle-btm">Корзина</button>
+      </nav>
       <!-- заголовок -->
-      <h2 class="device-catalog">Каталог товаров</h2>
-      <!-- кружок для скрытия и открытия списка каталога -->
-      <img src="№" alt="">
-      <h3>Доставка</h3>
-      <h3>Гарантия</h3>
-      <h3>Контакты</h3>
-
-
-
-
-
-
+      <nav class="header-catalog">
+        <h2 class="header-catalog-header">Каталог товаров</h2>
+        <button class="header-catalog-btm" alt="иконка открытия каталога товаров.">
+          <!-- кружок для скрытия и открытия списка каталога -->
+          <ul class="header-catalog-navigation">
+            <li class="header-catalog-item">
+              <a href="#" class="header-delivery-link">Доставка</a>
+            </li>
+            <li class="header-warranty-item">
+              <a href="#" class="header-warranty-link">Гарантия</a>
+            </li>
+            <li class="header-contacts-item">
+              <a href="#" class="header-contacts-link">Контакты</a>
+            </li>
+          </ul>
+      </nav>
+      <!-- цифра 01 -->
+      <div class="header-number">01</div>
     </header>
+    <main class="main-inder">
+      <!-- следующий блок -->
+      <section class="promo">
+        <button class="promo-slider-prev-btm" type="button">
+          <span class="visually-hidden">Предыдущее фото</span></button>
+        <img src="promo-slider-image-btm" src="" alt="фото акционного товара.">
+        <button src="promo-slider-next" type="button">
+          <span class="visually-hidden">Следущее фото</span></button>
+        <section class="promo-product">
+          <nav class="promo-product-header">Порхает как бабочка, жалит как пчела!</nav>
+          <nav class="promo-product-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            замаскированным под стандартную камеру.</nav>
+          <button class="promo-more-btm">Подробнее</button>
+          <img class="catalog-indicators"></img>
+          <div class="promo-product-range-of-flighе">800 м
+            <span class="promo-product-range-of-flighе-desc">Дальность полета</span>
+          </div>
+          <div class="promo-product-damage-radius">50 м
+            <span class="promo-product-damage-radius-desc">Радиус поражения</span>
+          </div>
+        </section>
+        <!------ Группы в каталоге -->
+        <section class="catalog-group">
+          <ul class="catalog-group-list">
+            <ol class="catalog-group-item">Виртуальная реальность</ol>
+            <ol class="catalog-group-item">Моноподы для селфи</ol>
+            <ol class="catalog-group-item">Экшн-камеры</ol>
+            <ol class="catalog-group-item">Фитнес-браслеты</ol>
+            <ol class="catalog-group-item">Умные часы</ol>
+            <ol class="catalog-group-item">Умные часы</ol>
+            <ol class="catalog-group-item">Квадрокоптеры</ol>
+          </ul>
+        </section>
+        <!------ Секция доставки товара -->
+        <section class="chapter-delivery">
+          <ul class="chapter-delivery-list">
+            <ol class="chapter-delivery-item">Доставка</ol>
+            <ol class="chapter-warranty-item">Гарантия</ol>
+            <ol class="chapter-credit-item">Предит</ol>
+        </section>
+        <section class="delivery">
+          <h3 class="delivery-header">Доставка</h3>
+          <h4 class="delivery-header-desc">Доставка</h4>
+          <img src="" alt="бегущий человек.">
+        </section>
+        <!-- доставка редкого товара под заказ -->
+        <section class="delivery-on-order">
+          <nav class="delivery-on-order-icon">
+            <img src="" alt="грузовая машинка">
+          </nav>
+          <nav class="delivery-on-order-header">Доставим редкий товар под заказ
+            <img src="" alt="">
+          </nav>
+        </section>
+        <!-- раздел о нас и контакты -->
+        <section class="about-us-contacts">
+          <!-- колонка о нас  -->
+          <nav class="about-us">
+            <img class="about-us-band" src="" alt="вертальная полоса">
+            <h3 class="about-us--header">О нас</h3>
+            <h4 class="about-us-desc-advantage">Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+              каждом
+              из нас.</h4>
+            <h4 class="about-us-desc-transport">Мы можем доставить ваш товар в самые отдалённые уголки России
+              транспортными компаниями:</h4>
+            <ul class="about-us-desc-list">
+              <ol class="about-us-chalk-lines">Меловые линии</ol>
+              <ol class="about-us-cd">СДИК</ol>
+              <ol class="about-us-cd">ТоксБерри</ol>
+            </ul>
+            <button class="more-about-us-btm">Подробнее о нас</button>
+          </nav>
+          <!-- колонка контакты -->
+          <nav class="contacts">
+            <img class="contacts-band" src="" alt="вертальная полоса">
+            <ul class="contacts-list">
+              <ol class="contacts-header">Контакты</ol>
+              <ol class="contacts-desc">Вы можете забрать товар сами, заехав в наш офис.
+                Заодно сможете проверить работоспособность покупки.</ol>
+              <ol class="contacts-online-store">Интернет-магазин «Девайс»</ol>
+              <ol class="contacts-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</ol>
+              <ol class="contacts-tel">+7 (812) 812-12-12</ol>
+              <ol class="contacts-working-hours-header">Время работы</ol>
+              <ol class="contacts-working-hours-desc">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</ol>
+            </ul>
+            <button class="write-to-us-btm">Напишите нам</button>
+            <!-- подпишитесь на рассылку -->
+            <section class="subscribe">
+              <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
+              <h3 class="subscribe-desc">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+                распаковками, а также акции, спецпредложения и вот это вот всё.</h3>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="subscribe-wrapper">
+                  <input class="subscribe-field" placeholder="Ваш e-mail" type="email" required>
+                  <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+                </div>
+                <img src="" alt="зеленый чекбокс.">
+                <h3 class="subscribe-is-free">Это бесплатно</h3>
+              </form>
+            </section>
 
+            <!-- Футер -->
+            <footer>
+              <!-- секция адреса -->
+              <section class="footer-address">
+                <img src="" alt="device">
+                <address>Санкт-Петербург, набережная
+                  реки Карповки, 5, литера П.</address>
+                <img class="footer-horizontal-bar" src="" alt="горизонтальная полоса">
+              </section>
+              <!-- кпноки доставка гарантия и контакты  -->
+              <section class="footer-service-social-networks">
+                <ul class="footer-service-list">
+                  <ol class="footer-delivery">ДОСТАВКА</ol>
+                  <ol class="footer-warranty">ГАРАНТИЯ</ol>
+                  <ol class="footer-contact">КОНТАКТЫ</ol>
+                </ul>
+                <ul class="footer-social-networks-list">
+                  <ol class="footer-social-networks-telegram">
+                    <a class="footer-link-telegram" href="https://t.me/htmlacademy">
+                      <img class="footer-icon-telegram" src="" alt="telegram">
+                    </a>
+                  </ol>
+                  <ol class="footer-social-networks-youtube">
+                    <a class="footer-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                      <img class="footer-icon-youtube" src="" alt="youtube">
+                    </a>
+                  </ol>
+                  <ol class="footer-social-networks-twitter">
+                    <a class="footer-link-twitter" href="https://twitter.com/htmlacademy_ru">
+                      <img class="footer-icon-twitter" src="" alt="twitter">
+                    </a>
+                  </ol>
+                </ul>
+              </section>
+              <section class="footer-tel-html-academy-logo">
+                <nav class="footer-tel">Тел.: +7 (812) 812-12-12</nav>
+                <nav class="footer-html-academy-logo">
+                  <img class="footer-icon-html-academy" src="" alt="html academy">
+                </nav>
+              </section>
+            </footer>
 
   </body>
 

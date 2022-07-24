@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+
+  <body>
+    <header class="header-catalog-page">
+      <!-- логотип сайта device -->
+      <img class="header-logo-device" src="#" alt="логотип сайта device.">
+      <!-- форма поиска по каталогу -->
+      <nav class="header-catalog-find">
+        <form action="#" method="get">
+          <div class="header-catalog-wrapper">
+            <!-- Иконка поиска будет внутри формы ввода -->
+            <input class="header-catalog-find-text" type="text" placeholder="Текст поиска" required>
+            <button class="header-catalog-find-btm" type="submit">Найти</button>
+          </div>
+        </form>
+      </nav>
+      <!-- иконка имя пользователя и кнопка выйти, кнопка так как наверняка появляется новая страница авторизации, так как в макете не прописываться, что происходит при авторизации -->
+      <img class="header-icon-authorized-user" src="#" alt="иконка авторизации пользователя на сайте.">
+      <nav class="header-authorized-user">Коля Петухов</nav>
+      <button class="header-enter-to-site">Выйти</button>
+      <!-- следующее навигационное меню -->
+      <nav class="header-compare-recycle">
+        <img class="header-icon-compare" src="#" alt="иконка сравнения.">
+        <button class="header-compare-btm">Сравнить</button>
+        <!-- иконка и кнопка корзина-->
+        <img class="header-icon-recycle" src="#" alt="иконка корзины.">
+        <button class="header-recycle-btm">Корзина</button>
+      </nav>
+      <!-- заголовок -->
+      <nav class="header-catalog">
+        <h1 class="header-catalog-header">Каталог товаров</h1>
+        <button class="header-catalog-btm" alt="иконка открытия каталога товаров.">
+          <!-- кружок для скрытия и открытия списка каталога -->
+          <ul class="header-catalog-navigation">
+            <li class="header-catalog-item">
+              <a href="#" class="header-delivery-link">Доставка</a>
+            </li>
+            <li class="header-warranty-item">
+              <a href="#" class="device-warranty-link">Гарантия</a>
+            </li>
+            <li class="header-contacts-item">
+              <a href="#" class="header-contacts-link">Контакты</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <!-- хлебные крошки -->
+    <main class="main-inner">
+      <section class="bread-crumbs">
+        <header class="device-catalog-header">Моноподы для селфи
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Моноподы для селфи</a>
+            </li>
+          </ul>
+        </header>
+        <!--сами фильтры -->
+        <!-- первый столбец с фильтрами -->
+        <section class="catalog-products">
+          <form action="https://echo.htmlacademy.ru/" method="get">
+             <ul class="catalog-products-filter">
+              <!-- заголовок для раздела фильтр на всю полосу как в навигации -->
+            <h3 class="catalog-products-filter">Фильтр:</h3>
+            <h3 class="catalog-products-sorting">Сортировка:</h3>
+
+            <select class="catalog-products-filter-sort-list" aria-label="Сортировка">
+              <option value="popular">Популярное</option>
+            </select>
+            <img class="catalog-products-filter-sort-up" src="" alt="треугольник вверх.">
+            <img src="catalog-products-filter-sort-down" alt="треугольник вниз.">
+
+            <img class="catalog-products-devider-price" src="" alt="горизонтальная полоса.">
+            <!-- тут блок с выбором стоимости опишем его чуть позже он в 6 разделе-->
+            <img class="catalog-products-devider-color" src="" alt="горизонтальная полоса.">
+            <fieldset class="catalog-products-filter-group">
+              <legend class="catalog-products-title-color">Цвет</legend>
+              <ul class="catalog-products-filter-group-list">
+                <li class="catalog-products-item">
+                  <label class="catalog-products-control">
+                    <input class="catalog-products-color-black" type="checkbox" checked>Черный
+                  </label>
+                </li>
+                <li class="catalog-products-item">
+                  <label class="catalog-products-control">
+                    <input class="catalog-products-color-white" name="white" type="checkbox" checked>Белый
+                  </label>
+                </li>
+                <li class="catalog-products-item">
+                  <label class="catalog-products-control">
+                    <input class="catalog-products-color-blue" name="blue" type="checkbox">Синий
+                  </label>
+                </li>
+                <li class="catalog-products-item">
+                  <label class="catalog-products-control">
+                    <input class="catalog-products-color-red" name="red" type="checkbox">Красный
+                  </label>
+                </li>
+                <li class="catalog-products-item">
+                  <label class="catalog-products-control">
+                    <input class="catalog-products-color-pink" name="pink" type="checkbox">Розовый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- тут разделитель горизонтальная черта -->
+            <img class="catalog-products-devider-bluetooth" src="" alt="горизонтальная полоса.">
+            <!-- дальше раздел bluetoth c радобоксом да или нет-->
+            <fieldset class="catalog-products-filter-group">
+              <legend class="catalog-products-title-bluetoth">Bluetoth</legend>
+
+              <ul class="catalog-products-filter-group-list">
+                <li class="catalog-products-item">
+                  <label class="catalog-products-control">
+                    <input class="catalog-products-bluetooth" name="bluetoth" type="radio" value="yes" checked>Есть
+                  </label>
+                </li>
+                <li class="catalog-products-item">
+                  <label class="catalog-products-control">
+                    <input class="catalog-products-bluetooth" name="bluetoth" type="radio" value="no">Нет
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+           <button class="catalog-products-filter-group-btm" type="submit">Показать</button>
+           </form>
+        </section>
+        <section class="catalog-products-show">
+          <ul class="catalog-products-show-list">
+            <li class="catalog-products-show-item">
+               <img src="catalog-products-show-picture" alt="Любительская селфи-палка">
+               <h3 class="catalog-products-show-item-header">Любительская селфи-палка</h3>
+               <h4 class="catalog-products-show-price">500 р</h4>
+            </li>
+
+            <li class="catalog-products-show-wrapper-item">
+              <img src="catalog-products-show--picture" alt="Любительская селфи-палка">
+              <h3 class="catalog-products-show-item-header">Профессиональная селфи-палка</h3>
+              <h4 class="catalog-products-show-price">1 500 р</h4>
+           </li>
+
+           <li class="catalog-products-show-wrapper-item">
+            <img src="catalog-products-show--picture" alt="Любительская селфи-палка">
+            <h3 class="catalog-products-show-item-header">Непотопляемая селфи-палка</h3>
+            <h4 class="catalog-products-show-price">2 500 р</h4>
+         </li>
+
+         <li class="catalog-products-show-wrapper-item">
+          <img src="catalog-products-show--picture" alt="Любительская селфи-палка">
+          <h3 class="catalog-products-show-item-header">Селфи-палка «Следуй за мной»</h3>
+          <h4 class="catalog-products-show-price">1 500 р</h4>
+         </li>
+        </ul>
+
+         <button class="catalog-products-load-more-btm">ЗАГРУЗИТЬ ЕЩЁ</button>
+
+          <ul class="catalog-products-pagination-list">
+            <li class="catalog-products-pagination-item">
+              <a class="catalog-products-pagination-link catalog-products-pagination-prev" href="#">НАЗАД</a>
+              <a class="catalog-products-pagination-link catalog-products-pagination-current" href="#">1</a>
+              <a class="catalog-products-pagination-link" href="#">2</a>
+              <a class="catalog-products-pagination-link" href="#">3</a>
+              <a class="catalog-products-pagination-link" href="#">...</a>
+              <a class="catalog-products-pagination-link" href="#">15</a>
+              <a class="catalog-products-pagination-link catalog-products-pagination-next" href="#">ВПЕРЁД</a>
+
+
+            </li>
+
+          </ul>
+
+
+       </section>
+
+
+
+
+    </main>
+
+
+
+
+
+    <!-- Футер -->
+    <footer>
+      <!-- секция адреса -->
+      <section class="footer-address">
+        <img src="" alt="device">
+        <address>Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.</address>
+        <img class="footer-horizontal-bar" src="" alt="горизонтальная полоса.">
+      </section>
+      <!-- кпноки доставка гарантия и контакты  -->
+      <section class="footer-service-social-networks">
+        <ul class="footer-service-list">
+          <ol class="footer-delivery">ДОСТАВКА</ol>
+          <ol class="footer-warranty">ГАРАНТИЯ</ol>
+          <ol class="footer-contact">КОНТАКТЫ</ol>
+        </ul>
+        <ul class="footer-social-networks-list">
+          <ol class="footer-social-networks-telegram">
+            <a class="footer-link-telegram" href="https://t.me/htmlacademy">
+              <img class="footer-icon-telegram" src="" alt="telegram">
+            </a>
+          </ol>
+          <ol class="footer-social-networks-youtube">
+            <a class="footer-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="footer-icon-youtube" src="" alt="youtube">
+            </a>
+          </ol>
+          <ol class="footer-social-networks-twitter">
+            <a class="footer-link-twitter" href="https://twitter.com/htmlacademy_ru">
+              <img class="footer-icon-twitter" src="" alt="twitter">
+            </a>
+          </ol>
+        </ul>
+      </section>
+      <section class="footer-tel-html-academy-logo">
+        <nav class="footer-tel">Тел.: +7 (812) 812-12-12</nav>
+        <nav class="footer-html-academy-logo">
+          <img class="footer-icon-html-academy" src="" alt="html academy">
+        </nav>
+      </section>
+    </footer>
+
+
+
+
+  </body>
+
+</html>
