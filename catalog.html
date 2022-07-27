@@ -4,12 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="header-catalog-page">
-      <!-- логотип сайта device -->
-      <img class="header-logo-device" src="#" alt="логотип сайта device.">
+      <h1 class="visually-hidden">Каталог товаров</h1>
+
+      <img class="header-logo-device" src="/images/header-device-logo.svg" alt="логотип сайта device." width="145" height="36">
       <!-- форма поиска по каталогу -->
       <nav class="header-catalog-find">
         <form action="#" method="get">
@@ -20,22 +22,30 @@
           </div>
         </form>
       </nav>
-      <!-- иконка имя пользователя и кнопка выйти, кнопка так как наверняка появляется новая страница авторизации, так как в макете не прописываться, что происходит при авторизации -->
-      <img class="header-icon-authorized-user" src="#" alt="иконка авторизации пользователя на сайте.">
-      <nav class="header-authorized-user">Коля Петухов</nav>
-      <button class="header-enter-to-site">Выйти</button>
-      <!-- следующее навигационное меню -->
-      <nav class="header-compare-recycle">
-        <img class="header-icon-compare" src="#" alt="иконка сравнения.">
-        <button class="header-compare-btm">Сравнить</button>
-        <!-- иконка и кнопка корзина-->
-        <img class="header-icon-recycle" src="#" alt="иконка корзины.">
-        <button class="header-recycle-btm">Корзина</button>
-      </nav>
-      <!-- заголовок -->
+      <!-- иконка и кнопка войти, кнопка так как наверняка появляется новая страница авторизации, так как в макете не прописываться, что происходит при авторизации -->
+       <ul class="header-authorization-user">
+      <img class="header-user-authorization-icon" src="#" alt="иконка авторизации пользователя на сайте.">
+      <li><a href="#" class="header-user-authorization"></a>Коля Петухов</li>
+       <li><a href="#" class="header-user-authorization-link">Выйти</a></li>
+      <img class="header-compare-icon" src="#" alt="иконка сравнения">
+        <li><a href="#" class="header-compare-link">Сравнить</a></li>
+      <img class="header-icon-recycle" src="#" alt="иконка Корзины">
+        <li><a href="#" class="header-recycle-link">Корзина</a></li>
+      </ul>
+          <!-- заголовок -->
       <nav class="header-catalog">
-        <h1 class="header-catalog-header">Каталог товаров</h1>
-        <button class="header-catalog-btm" alt="иконка открытия каталога товаров.">
+
+        <ul class="header-catalog-products">Каталог товаров</г>
+          <li class="visually-hidden header-catalog-virtual-reality">Виртуальная реальность</li>
+          <li class="visually-hidden header-catalog-selfie-monopods">моноподы для селфи</li>
+          <li class="visually-hidden header-catalog-action camera">Экшн-камера</li>
+          <li class="visually-hidden header-catalog-fitness-bracelets">Фитнес браслеты</li>
+          <li class="visually-hidden header-catalog-smart-watch">Умные часы</li>
+          <li class="visually-hidden header-catalog-quadcopters">Квадрокоптеры</li>
+          <ul>
+         <a href="#" class="header-catalog-expand">
+            <img class="header-catalog-btm" alt="иконка открытия каталога товаров.">
+         </a>
           <!-- кружок для скрытия и открытия списка каталога -->
           <ul class="header-catalog-navigation">
             <li class="header-catalog-item">

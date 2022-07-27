@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="header-page">
       <!-- логотип сайта device -->
       <h1 class="visually-hidden">Интернет магазин device</h1>
-      <img class="header-logo-device" src="#" alt="логотип сайта device.">
+      <img class="header-logo-device" src="/images/header-device-logo.svg" alt="логотип сайта device." width="145" height="36">
       <!-- форма поиска по каталогу -->
       <nav class="header-catalog-find">
         <form action="#" method="get">
@@ -22,20 +23,22 @@
         </form>
       </nav>
       <!-- иконка и кнопка войти, кнопка так как наверняка появляется новая страница авторизации, так как в макете не прописываться, что происходит при авторизации -->
-      <img class="header-icon-user-authorization" src="#" alt="иконка авторизации пользователя на сайте.">
-      <button class="header-enter-to-site">Войти</button>
-      <!-- следующее навигационное меню -->
-      <nav class="header-compare-recycle">
-        <img class="header-icon-compare" src="#" alt="иконка сравнения">
-        <button class="header-compare-btm">Сравнить</button>
-        <!-- иконка и кнопка корзина-->
-        <img class="header-icon-recycle" src="#" alt="иконка Корзины">
-        <button class="header-recycle-btm">Корзина</button>
-      </nav>
+       <ul class="header-authorization-user">
+      <img class="header-user-authorization-icon" src="#" alt="иконка авторизации пользователя на сайте.">
+       <li><a href="#" class="header-user-authorization-link">Войти</a></li>
+      <img class="header-compare-icon" src="#" alt="иконка сравнения">
+        <li><a href="#" class="header-compare-link">Сравнить</a></li>
+      <img class="header-icon-recycle" src="#" alt="иконка Корзины">
+        <li><a href="#" class="header-recycle-link">Корзина</a></li>
+      </ul>
       <!-- заголовок -->
       <nav class="header-catalog">
-        <h2 class="header-catalog-header">Каталог товаров</h2>
-        <button class="header-catalog-btm" alt="иконка открытия каталога товаров.">
+        <h2 class="header-catalog-product">Каталог товаров</h2>
+        <buttom href="#" class="header-catalog-expand">
+          <img class="header-catalog-img" alt="иконка открытия каталога товаров.">
+       </buttom>
+      </a>
+
           <!-- кружок для скрытия и открытия списка каталога -->
           <ul class="header-catalog-navigation">
             <li class="header-catalog-item">
@@ -49,15 +52,15 @@
             </li>
           </ul>
       </nav>
-      <!-- цифра 01 -->
-      <div class="header-number">01</div>
-    </header>
-    <main class="main-inder">
+   </header>
+
+    <main class="main-index">
       <!-- следующий блок -->
       <section class="promo">
+        <div class="promo-number">01</div>
         <button class="promo-slider-prev-btm" type="button">
           <span class="visually-hidden">Предыдущее фото</span></button>
-        <img src="promo-slider-image-btm" src="" alt="фото акционного товара.">
+        <img class="promo-slider-image-btm" src="/images/promo-slider-1.png" width="560" height="560"" alt="фото акционного товара.">
         <button src="promo-slider-next" type="button">
           <span class="visually-hidden">Следущее фото</span></button>
         <section class="promo-product">
