@@ -99,48 +99,71 @@
         <!-- следующий блок -->
         <div class="index-columns">
           <section class="promo">
-            <button class="promo-slider-prev-btm" type="button">
-              <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000" />
-              </svg></button>
-            <img class="promo-slider-image" src="/images/promo-slider-1.png" width="560" height="560" alt=" фото промо товара.">
-            <button class="promo-slider-next-btm" type="button">
-              <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" fill="#000" />
-              </svg></button>
-           </section>
+            <div class="bottom-promo">
+              <button class="promo-slider-prev-btm" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000" />
+                </svg></button>
 
-           <section class="promo-slider-navigation-1-desc-section">
+              <button class="promo-slider-next-btm" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" fill="#000" />
+                </svg></button>
+            </div>
+
+            <img class="promo-slider-image" src="/images/promo-slider-1.png" width="560" height="560"
+              alt=" фото промо товара.">
+          </section>
+
+          <section class="promo-slider-navigation-1-desc-section">
             <ul class="promo-slider-navigation-1-desc-list">
               <li class="promo-slider-navigation-1-desc-item">
-                <div class="promo-slider-number">01</div>
+                <span class="promo-slider-number">01</span>
               </li>
               <li class="promo-slider-navigation-1-desc-item">
-                <div class="header-style promo-product-header">Порхает как бабочка, жалит как пчела!</div>
+                <span class="header-style promo-product-header">Порхает как бабочка, жалит как пчела!</span>
               </li>
               <li class="promo-slider-navigation-1-desc-item">
-                <div class="promo-product-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                  замаскированным под стандартную камеру.</div>
-              </li>
-              <li class="promo-slider-navigation-1-desc-item">
-                <button class="promo-more-btm">Подробнее</button>
-              </li>
-              <li class="promo-slider-navigation-1-desc-item">
-                <img class="catalog-indicators"></li>
-                <li class="promo-slider-navigation-1-desc-item">
-
-                <div class="promo-product-range-of-flighе">800 м
-                  <span class="promo-product-range-of-flighе-desc">Дальность полета</span>
-                </div>
-              </li>
-            </li>
-                <div class="promo-product-damage-radius">50 м
-                  <span class="promo-product-damage-radius-desc">Радиус поражения</span>
-                </div>
+                <span class="promo-product-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                  замаскированным под стандартную камеру.</span>
               </li>
             </ul>
+            <div class="promo-more-btm-indicators">
+              <button class="promo-more-btm">П О Д Р О Б Н Е Е</button>
+              <svg class="catalog-indicators" width="76" height="12" viewBox="0 0 76 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="5" fill="#000" stroke="#000" stroke-width="2" />
+                <circle cx="38" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
+                <circle cx="70" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
+              </svg>
+            </div>
+
+            <div class="promo-product-wrapper">
+            <h3 class="heading promo-product-range-of-flighе">800 м
+              <p class="promo-product-range-of-flighе-desc">Дальность полета</p>
+            </h3>
+            <h3 class="heading promo-product-damage-radius">50 м
+              <p class="promo-product-damage-radius-desc">Радиус поражения</p>
+            </h3>
+          </div>
+
           </section>
         </div> <!-- для индекс  -->
+        <!-- часть которая отвечает за показ групп товаров на сайте -->
+        <section class="catalog-group">
+          <ul class="catalog-group-list">
+            <li class="catalog-group-item catalog-group-virtual-reality"><p>Виртуальная реальность </p> </li>
+            <li class="catalog-group-item catalog-group-monopod"><p>Моноподы для селфи</li></p>
+            <li class="catalog-group-item catalog-group-action-camera"><p>Экшн-камеры</p></li>
+            <li class="catalog-group-item catalog-group-fitness-bracelets"><p>Фитнес-браслеты</p></li>
+            <li class="catalog-group-item catalog-group-smart-watch"><p>Умные часы</p></li>
+            <li class="catalog-group-item catalog-group-quadcopters"><p>Квадрокоптеры</p></li>
+          </ul>
+        </section>
+
+
+
+
       </div><!-- для контейнера -->
 
 
@@ -148,41 +171,8 @@
 
 
 
-      <!--         <section class="promo">
-          <div class="promo-number">01</div>
-          <button class="promo-slider-prev-btm" type="button">
-            <span class="visually-hidden">Предыдущее фото</span></button>
-          <img class="promo-slider-image-btm" src="/images/promo-slider-1.png" width="560" height="560"" alt=" фото
-            акционного товара.">
-          <button src="promo-slider-next" type="button">
-            <span class="visually-hidden">Следущее фото</span></button>
-          <section class="promo-product">
-            <nav class="header-style promo-product-header">Порхает как бабочка, жалит как пчела!</nav>
-            <nav class="promo-product-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.</nav>
-            <button class="promo-more-btm">Подробнее</button>
-            <img class="catalog-indicators"></img>
-            <div class="promo-product-range-of-flighе">800 м
-              <span class="promo-product-range-of-flighе-desc">Дальность полета</span>
-            </div>
-            <div class="promo-product-damage-radius">50 м
-              <span class="promo-product-damage-radius-desc">Радиус поражения</span>
-            </div>
-          </section> -->
-
-
       <!------ Группы в каталоге -->
-      <section class="catalog-group">
-        <ul class="catalog-group-list">
-          <ol class="catalog-group-item">Виртуальная реальность</ol>
-          <ol class="catalog-group-item">Моноподы для селфи</ol>
-          <ol class="catalog-group-item">Экшн-камеры</ol>
-          <ol class="catalog-group-item">Фитнес-браслеты</ol>
-          <ol class="catalog-group-item">Умные часы</ol>
-          <ol class="catalog-group-item">Умные часы</ol>
-          <ol class="catalog-group-item">Квадрокоптеры</ol>
-        </ul>
-      </section>
+
       <!------ Секция доставки товара -->
       <section class="chapter-delivery">
         <ul class="chapter-delivery-list">

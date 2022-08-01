@@ -58,12 +58,18 @@
 
  .header-authorization-user-list,
  .header-catalog-navigation,
- .header-catalog-bottom,
- .promo-slider-navigation-1-desc-list {
+ .header-catalog-bottom {
    list-style-type: none;
    padding: 0;
    margin: 0;
    display: flex;
+ }
+
+ .promo-slider-navigation-1-desc-list {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+
  }
 
  .heading {
@@ -73,7 +79,6 @@
  }
 
  .header-page {
-   position: relative;
    background-color: #FFE17F;
    color: #000000;
  }
@@ -210,15 +215,56 @@
  }
 
  .promo-slider-number {
+   display: block;
+   text-align: right;
    font-family: "Rubik", sans-serif;
-   display: flex;
    font-weight: 700;
    font-size: 180px;
    line-height: 30px;
-   position: absolute;
-   z-index: 100;
-   background-color:#ffffff;
+   color: #ffffff;
+   padding-right: 49px;
+   margin-top: -67px;
  }
+
+ .promo-product-header {
+   display: block;
+   padding-top: 10px;
+ }
+
+ .promo-product-desc {
+   display: block;
+   padding-top: 28px;
+ }
+
+  .promo-more-btm-indicators {
+  display: flex;
+  padding-top: 64px;
+  justify-content: space-between;
+ }
+
+ .promo-product-wrapper {
+   display: flex;
+   padding-top: 61px;
+ }
+
+.promo-product-damage-radius {
+   padding-left: 21px;
+}
+
+ .promo-more-btm {
+   display: flex;
+   cursor:pointer;
+   font-family: "Raleway", sans-serif;
+   font-weight:800;
+   font-size: 18px;
+   line-height: 21px;
+   width: 220px;
+   height: 8px;
+   background-color: #FFE17F;
+   border: 0;
+   justify-content: center;
+   align-items: center;
+}
 
  .header-style {
    font-family: "Raleway", sans-serif;
@@ -258,13 +304,64 @@
    line-height: 30px;
  }
 
+ .catalog-group-list {
+   display: grid;
+   padding:0;
+   margin:0;
+   padding-top:60px;
+   list-style-type: none;
+   grid-auto-flow: column;
+   justify-content: space-between;
+ }
+
  .catalog-group-item {
-   f display: flex;
+   display: flex;
    font-family: "Raleway", sans-serif;
    font-weight: 800;
    font-size: 18px;
    line-height: 24px;
+   justify-content: space-around;
+   background-color:#FFE17F;
+   width: 160px;
+   height: 160px;
  }
+
+ .catalog-group-virtual-reality {
+   background-image:url("../images/virtual-reality.svg");
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+
+ .catalog-group-monopod {
+  background-image:url("../images/selfie-monopods.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.catalog-group-action-camera {
+  background-image:url("../images/action-camera.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-group-fitness-bracelets {
+  background-image:url("../images/fitness-bracelets.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.catalog-group-smart-watch {
+  background-image:url("../images/smart-watch.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-group-quadcopters {
+  background-image:url("../images/quadrocopters.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
  .delivery-on-order-header {
    font-family: "Raleway", sans-serif;
@@ -436,9 +533,9 @@
 
  .header-authorization-user-list {
    display: flex;
-   margin-left:auto;
+   margin-left: auto;
 
-}
+ }
 
  .header-user-autorizatiuon-logo {
    padding-top: 9px;
@@ -453,64 +550,55 @@
  }
 
  .header-catalog-title-img {
-  margin-top:-13px;
-  margin-left:7px;
-   }
+   margin-top: -13px;
+   margin-left: 7px;
+ }
 
-.header-catalog-bottom {
-  display:flex;
-  margin-left:auto;
-}
-
-.header-page-wrapper-bottom {
-  display: flex;
-  padding-top:45px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.header-authorization-user-section {
-  padding-top:54px;
-  margin-left:auto;
-}
-
-.promo-slider-prev-btm,
-.promo-slider-next-btm {
-  border:0;
-  cursor: pointer;
-  background-color: #ffffff;
-}
-
-.promo-slider-navigation-1-desc-list {
-  display:flex;
-  justify-content: column;
-}
-
-.promo-slider-prev-btm {
+ .header-catalog-bottom {
    display: flex;
-   padding-left:30px;
-   padding-top:61px;
-}
+   margin-left: auto;
+ }
 
-.promo-slider-next-btm {
-  display: flex;
-  padding-top:61px;
-}
+ .header-page-wrapper-bottom {
+   display: flex;
+   padding-top: 45px;
+   padding-left: 60px;
+   padding-right: 60px;
+ }
 
-.index-columns {
-  display: flex;
-  justify-content: space-between;
-}
+ .header-authorization-user-section {
+   padding-top: 54px;
+   margin-left: auto;
+ }
 
-.promo {
-  width:600px;
-  margin-top:-300px;
-}
+ .promo-slider-prev-btm,
+ .promo-slider-next-btm {
+   border: 0;
+   cursor: pointer;
+   background-color: #ffffff;
+ }
 
-.promo-slider-navigation-1-desc-section {
-  width:560px;
-}
+ .index-columns {
+   display: flex;
+ }
 
-.promo-slider-image {
+ .promo {
+   width: 600px;
+   margin-top: -270px;
+ }
 
-}
+ .promo-slider-navigation-1-desc-section {
+   width: 560px;
+ }
+
+ .bottom-promo {
+   display: flex;
+   padding-left: 25px;
+   justify-content: space-between;
+   width: 541px;
+   padding-top: 331px;
+ }
+
+ .promo-slider-image {
+   margin-top: -275px;
+ }
