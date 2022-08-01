@@ -9,11 +9,12 @@
 
   <body>
     <header class="header-catalog-page">
+      <div class="container">
+        <img class="header-logo-device" src="/images/header-device-logo.svg" alt="логотип сайта device." width="145" height="36">
       <h1 class="visually-hidden">Каталог товаров</h1>
 
-      <img class="header-logo-device" src="/images/header-device-logo.svg" alt="логотип сайта device." width="145" height="36">
-      <!-- форма поиска по каталогу -->
-      <nav class="header-catalog-find">
+     <!-- форма поиска по каталогу -->
+      <section class="header-catalog-find">
         <form action="#" method="get">
           <div class="header-catalog-wrapper">
             <!-- Иконка поиска будет внутри формы ввода -->
@@ -21,27 +22,33 @@
             <button class="header-catalog-find-btm" type="submit">Найти</button>
           </div>
         </form>
-      </nav>
+      </section>
       <!-- иконка и кнопка войти, кнопка так как наверняка появляется новая страница авторизации, так как в макете не прописываться, что происходит при авторизации -->
        <ul class="header-authorization-user">
       <img class="header-user-authorization-icon" src="#" alt="иконка авторизации пользователя на сайте.">
       <li><a href="#" class="header-user-authorization"></a>Коля Петухов</li>
        <li><a href="#" class="header-user-authorization-link">Выйти</a></li>
-      <img class="header-compare-icon" src="#" alt="иконка сравнения">
+      <img class="header-compare-icon" src="#" alt="иконка сравнения.">
         <li><a href="#" class="header-compare-link">Сравнить</a></li>
-      <img class="header-icon-recycle" src="#" alt="иконка Корзины">
+      <img class="header-icon-recycle" src="#" alt="иконка Корзины.">
         <li><a href="#" class="header-recycle-link">Корзина</a></li>
       </ul>
           <!-- заголовок -->
       <nav class="header-catalog">
-
-        <ul class="header-catalog-products">Каталог товаров</г>
-          <li class="visually-hidden header-catalog-virtual-reality">Виртуальная реальность</li>
-          <li class="visually-hidden header-catalog-selfie-monopods">моноподы для селфи</li>
-          <li class="visually-hidden header-catalog-action camera">Экшн-камера</li>
-          <li class="visually-hidden header-catalog-fitness-bracelets">Фитнес браслеты</li>
-          <li class="visually-hidden header-catalog-smart-watch">Умные часы</li>
-          <li class="visually-hidden header-catalog-quadcopters">Квадрокоптеры</li>
+        <ul class="header-catalog-title">Каталог товаров</г>
+          <img class="header-catalog-deployed-img" alt="иконка открытия каталога товаров." >
+          <li class="header-catalog-virtual-reality">
+            <a href="#" class="header-catalog-virtual-reality-link">Виртуальная реальность</a></li>
+          <li class="header-catalog-selfie-monopods">Моноподы для селфи</li>
+            <a href="#" class=" header-catalog-selfie-monopods-link">
+          <li class="header-catalog-action-camera">
+            <a href="#" class="header-catalog-action-camera-link">Экшн-камера</a></li>
+          <li class="header-catalog-fitness-bracelets">
+            <a href="#" class="header-catalog-fitness-bracelets-link"> Фитнес браслеты</a></li>
+          <li class="header-catalog-smart-watch">
+             <a href="#" class="header-catalog-smart-watch-link">Умные часы</a></li>
+          <li class="header-catalog-quadcopters">
+             <a href="#" class="header-catalog-quadcopters-link"> Квадрокоптеры</a></li>
           <ul>
          <a href="#" class="header-catalog-expand">
             <img class="header-catalog-btm" alt="иконка открытия каталога товаров.">
@@ -59,9 +66,11 @@
             </li>
           </ul>
       </nav>
+    </div>
     </header>
     <!-- хлебные крошки -->
-    <main class="main-inner">
+    <main class="main-container main-inner">
+    <div class="container">
       <section class="bread-crumbs">
         <header class="device-catalog-header">Моноподы для селфи
           <ul class="breadcrumbs-list">
@@ -86,13 +95,15 @@
             <h3 class="catalog-products-sorting">Сортировка:</h3>
 
             <select class="catalog-products-filter-sort-list" aria-label="Сортировка">
-              <option value="popular">Популярное</option>
+              <option value="popular">Популярные</option>
             </select>
             <img class="catalog-products-filter-sort-up" src="" alt="треугольник вверх.">
             <img src="catalog-products-filter-sort-down" alt="треугольник вниз.">
 
             <img class="catalog-products-devider-price" src="" alt="горизонтальная полоса.">
             <!-- тут блок с выбором стоимости опишем его чуть позже он в 6 разделе-->
+            <h4 class="catalog-products-filter-price">Стоимость</h4>
+
             <img class="catalog-products-devider-color" src="" alt="горизонтальная полоса.">
             <fieldset class="catalog-products-filter-group">
               <legend class="catalog-products-title-color">Цвет</legend>
@@ -150,26 +161,26 @@
           <ul class="catalog-products-show-list">
             <li class="catalog-products-show-item">
                <img src="catalog-products-show-picture" alt="Любительская селфи-палка">
-               <h3 class="catalog-products-show-item-header">Любительская селфи-палка</h3>
-               <h4 class="catalog-products-show-price">500 р</h4>
+               <h3 class="catalog-prodicts-show-title catalog-products-show-item-header">Любительская селфи-палка</h3>
+               <h4 class="catalog-prodicts-show-price-title catalog-products-show-price">500 р</h4>
             </li>
 
             <li class="catalog-products-show-wrapper-item">
-              <img src="catalog-products-show--picture" alt="Любительская селфи-палка">
-              <h3 class="catalog-products-show-item-header">Профессиональная селфи-палка</h3>
-              <h4 class="catalog-products-show-price">1 500 р</h4>
+              <img src="catalog-products-show-picture" alt="Любительская селфи-палка">
+              <h3 class="catalog-prodicts-show-title catalog-products-show-item-header">Профессиональная селфи-палка</h3>
+              <h4 class="catalog-prodicts-show-price-title catalog-products-show-price">1 500 р</h4>
            </li>
 
            <li class="catalog-products-show-wrapper-item">
-            <img src="catalog-products-show--picture" alt="Любительская селфи-палка">
-            <h3 class="catalog-products-show-item-header">Непотопляемая селфи-палка</h3>
-            <h4 class="catalog-products-show-price">2 500 р</h4>
+            <img src="catalog-products-show-picture" alt="Любительская селфи-палка">
+            <h3 class="catalog-prodicts-show-title catalog-products-show-item-header">Непотопляемая селфи-палка</h3>
+            <h4 class="catalog-prodicts-show-price-title catalog-products-show-price">2 500 р</h4>
          </li>
 
          <li class="catalog-products-show-wrapper-item">
-          <img src="catalog-products-show--picture" alt="Любительская селфи-палка">
-          <h3 class="catalog-products-show-item-header">Селфи-палка «Следуй за мной»</h3>
-          <h4 class="catalog-products-show-price">1 500 р</h4>
+          <img src="catalog-products-show-picture" alt="Любительская селфи-палка">
+          <h3 class="catalog-prodicts-show-title catalog-products-show-item-header">Селфи-палка «Следуй за мной»</h3>
+          <h4 class="catalog-prodicts-show-price-title catalog-products-show-price">1 500 р</h4>
          </li>
         </ul>
 
@@ -185,67 +196,54 @@
               <a class="catalog-products-pagination-link" href="#">15</a>
               <a class="catalog-products-pagination-link catalog-products-pagination-next" href="#">ВПЕРЁД</a>
 
-
             </li>
-
           </ul>
-
-
-       </section>
-
-
-
-
+      </section>
+    </div>
     </main>
-
-
-
-
 
     <!-- Футер -->
     <footer>
+      <div class="container">
       <!-- секция адреса -->
       <section class="footer-address">
-        <img src="" alt="device">
-        <address>Санкт-Петербург, набережная
+        <img src="" alt="логотип device">
+        <address class="footer-address-desc">Санкт-Петербург, набережная<br>
           реки Карповки, 5, литера П.</address>
-        <img class="footer-horizontal-bar" src="" alt="горизонтальная полоса.">
+        <img class="footer-horizontal-bar" src="#" alt="горизонтальная полоса.">
       </section>
       <!-- кпноки доставка гарантия и контакты  -->
       <section class="footer-service-social-networks">
         <ul class="footer-service-list">
-          <ol class="footer-delivery">ДОСТАВКА</ol>
-          <ol class="footer-warranty">ГАРАНТИЯ</ol>
-          <ol class="footer-contact">КОНТАКТЫ</ol>
+          <li class="footer-delivery">ДОСТАВКА</li>
+          <li class="footer-warranty">ГАРАНТИЯ</li>
+          <li class="footer-contact">КОНТАКТЫ</li>
         </ul>
         <ul class="footer-social-networks-list">
-          <ol class="footer-social-networks-telegram">
-            <a class="footer-link-telegram" href="https://t.me/htmlacademy">
-              <img class="footer-icon-telegram" src="" alt="telegram">
+          <li class="footer-social-networks-telegram">
+            <a class="footer-telegram-link" href="https://t.me/htmlacademy">
+              <img class="footer-telegram-icon" src="" alt="иконка telegram">
             </a>
-          </ol>
-          <ol class="footer-social-networks-youtube">
-            <a class="footer-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="footer-icon-youtube" src="" alt="youtube">
+          </li>
+          <li class="footer-social-networks-youtube">
+            <a class="footer-youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="footer-youtube-icon" src="#" alt="иконка youtube">
             </a>
-          </ol>
-          <ol class="footer-social-networks-twitter">
-            <a class="footer-link-twitter" href="https://twitter.com/htmlacademy_ru">
-              <img class="footer-icon-twitter" src="" alt="twitter">
+          </li>
+          <li class="footer-social-networks-twitter">
+            <a class="footer-twitter-link" href="https://twitter.com/htmlacademy_ru">
+              <img class="footer-twitter-icon" src="" alt="иконка twitter">
             </a>
-          </ol>
+          </li>
         </ul>
       </section>
-      <section class="footer-tel-html-academy-logo">
-        <nav class="footer-tel">Тел.: +7 (812) 812-12-12</nav>
-        <nav class="footer-html-academy-logo">
-          <img class="footer-icon-html-academy" src="" alt="html academy">
-        </nav>
+      <section class="footer-tel-and-logo">
+        <a class="footer-tel" href="Тел.: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
+        <a hreff="https://htmlacademy.ru/" class="footer-logo-link">
+          <img class="footer-logo-img" src="#" alt="логотип html academy."></a>
       </section>
+     </div>
     </footer>
-
-
-
 
   </body>
 
