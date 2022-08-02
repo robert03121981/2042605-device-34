@@ -58,11 +58,17 @@
 
  .header-authorization-user-list,
  .header-catalog-navigation,
- .header-catalog-bottom {
+ .header-catalog-bottom{
    list-style-type: none;
    padding: 0;
    margin: 0;
    display: flex;
+ }
+
+ .delivery-guarantee-credit-btm {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
  }
 
  .promo-slider-navigation-1-desc-list {
@@ -266,6 +272,96 @@
    align-items: center;
 }
 
+.term-buy-wrapper {
+  display: flex;
+  padding:0;
+  margin:0;
+  padding-top:55px;
+}
+
+.delivery-guarantee-credit-btm li:first-child {
+  padding-top:65px;
+}
+
+.delivery-guarantee-credit-btm li:nth-child(2) {
+  padding-top:51px;
+}
+
+.delivery-guarantee-credit-btm li:nth-child(3) {
+  padding-top:67px;
+}
+
+.term-item {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color:#000000;
+  background-color:#FFE17F;
+  height: 8px;
+  width: 160px;
+  cursor:pointer;
+}
+
+.delivery-guarantee-credit-btm-current {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items:center;
+  padding-left:15px;
+  font-weight:800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  height: 40px;
+  width: 270px;
+  background-color:#000000;
+  color:#FFE17F;
+  border:0;
+  cursor:pointer;
+}
+
+.delivery-guarantee-credit {
+  width: 289px;
+}
+
+.delivery-guarantee-credit-btm {
+  display:flex;
+  flex-direction: column;
+  border-style:solid;
+  border-width:0 7px 0 0 ;
+  height: 319px;
+}
+
+.delivery {
+  width: 563px;
+}
+
+.delivery-image-wrapper {
+   width:202px;
+}
+
+.delivery-image {
+  display: block;
+  background-image:url("/images/delivery.svg");
+  background-repeat:no-repeat;
+}
+
+.delivery-header {
+  display: block;
+  padding:0;
+  margin:0;
+  padding-top: 75px;
+  padding-left:112px;
+}
+
+.delivery-header-desc{
+  display: block;
+  padding:0;
+  margin:0;
+  padding-top: 32px;
+  padding-left:111px;
+
+}
+
  .header-style {
    font-family: "Raleway", sans-serif;
    font-weight: 800;
@@ -326,6 +422,10 @@
    height: 160px;
  }
 
+ .catalog-group-item + p {
+   padding-top: 11px;
+ }
+
  .catalog-group-virtual-reality {
    background-image:url("../images/virtual-reality.svg");
    background-repeat: no-repeat;
@@ -342,6 +442,7 @@
   background-image:url("../images/action-camera.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 
 .catalog-group-fitness-bracelets {
