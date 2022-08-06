@@ -58,7 +58,9 @@ body {
 
 .header-authorization-user-list,
 .header-catalog-navigation,
-.header-catalog-bottom {
+.header-catalog-bottom,
+.footer-service-list,
+.footer-social-networks-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -88,11 +90,6 @@ body {
   color: #000000;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -107,17 +104,6 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 45px;
-}
-
-.header-catalog-find-text {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  width: 359px;
-  height: 36px;
-  border: 0;
-  border-color: #000000;
 }
 
 .header-logo-device {
@@ -153,6 +139,7 @@ body {
 }
 
 .header-catalog-find-text {
+  margin: 0;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -162,10 +149,20 @@ body {
   border: 2px solid #000000;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  background-image:url("../images/header-find-logo.svg");
+  background-repeat: no-repeat;
+  background-position: 16px  center;
+  width:303px;
+  padding-left: 48px;
+  height:33px;
+  border-color: #000000;
+  border-right-color: #FFE17F;
 }
 
 .header-catalog-find-btm {
-
+  display: flex;
+  justify-content: center;
+  align-items:center;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -173,7 +170,7 @@ body {
   color: #000000;
   background-color: #FFE17F;
   border: 2px solid #000000;
-  width: 160px;
+  width: 157px;
   height: 39px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -759,17 +756,55 @@ body {
 
 .footer-nav {
   display: block;
-  margin: 0 auto;
   color: #ffffff;
   background-color: #444444;
-  padding-top:100px;
+  padding-top:63px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-address {
+  width:290px;
 }
 
 .footer-address-desc {
+  font-style: normal;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  padding-top:26px;
+  padding-bottom:65px;
+}
+
+.footer-horizontal-bar {
+  display:block;
+  width:80px;
+  height:7px;
+  padding-bottom: 77px;
+  background-image:url("../images/footer-horizontal-bar.svg");
+  background-repeat:no-repeat;
+}
+
+.footer-service-social-networks {
+  padding-top: 70px;
+  width:631px;
+}
+
+.footer-service-link {
+   padding-left: 35px;
+   text-decoration: none;
+   color:#ffffff;
 }
 
 .footer-social-networks-list {
@@ -777,6 +812,12 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  padding-top:28px;
+  padding-left:96px;
+}
+
+.footer-social-link {
+  padding-left:15px;
 }
 
 .footer-tel {
@@ -784,6 +825,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color:#ffffff;
+}
+.footer-tel-and-logo {
+  display: block;
+  width:175px;
+  text-align: end;
+  padding-top:73px;
+}
+
+.footer-logo-link {
+  display: block;
+  padding-top:60px;
 }
 
 .breadcrumbs-list {
@@ -899,12 +952,11 @@ body {
 .header-authorization-user-list {
   display: flex;
   margin-left: auto;
-
 }
 
 .header-user-autorizatiuon-logo {
   padding-top: 9px;
-  padding-left: 27px:
+  padding-left: 127px:
 }
 
 .header-catalog-list {
