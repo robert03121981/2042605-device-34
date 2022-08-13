@@ -101,9 +101,9 @@ body {
 }
 
 .delivery-guarantee-credit-color {
-  padding-top:56px;
+  padding-top: 56px;
   background: linear-gradient(to top, #F0F0F0 64%, #ffffff 50%);
-  padding-bottom:72px;
+  padding-bottom: 72px;
 }
 
 .delivery-guarantee-credit-btm {
@@ -314,6 +314,7 @@ body {
 .promo-product-header {
   display: block;
   padding-top: 10px;
+
 }
 
 .promo-product-desc {
@@ -323,7 +324,7 @@ body {
 
 .promo-more-btm-indicators {
   display: flex;
-  padding-top: 64px;
+  padding-top: 68px;
   justify-content: space-between;
 }
 
@@ -351,14 +352,18 @@ body {
   align-items: center;
 }
 
+.catalog-indicators {
+  cursor: pointer;
+}
+
 .term-buy-wrapper {
   display: flex;
-  width:1160px;
+  width: 1160px;
   margin: 0 auto;
 }
 
 
-.delivery-guarantee-credit-wrapper{
+.delivery-guarantee-credit-wrapper {
   padding-top: 55px;
 }
 
@@ -376,6 +381,10 @@ body {
 
 .term-item {
   display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
   justify-content: center;
   align-items: center;
   color: #000000;
@@ -420,8 +429,8 @@ body {
 }
 
 .delivery-image {
-  padding-top:77px;
-  padding-left:111px;
+  padding-top: 77px;
+  padding-left: 111px;
 }
 
 .delivery-image-picture {
@@ -453,7 +462,7 @@ body {
   padding: 0;
   margin: 0;
   width: 500px;
-  padding-top: 71px;
+  padding-top: 69px;
   flex-direction: column;
 }
 
@@ -461,7 +470,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  padding-top: 71px;
+  padding-top: 69px;
   padding-left: 128px;
   flex-direction: column;
   width: 515px;
@@ -483,9 +492,13 @@ body {
 
 .about-divider {
   display: block;
+  margin: 0;
+  padding: 0;
+  padding border: 0;
   width: 84px;
   height: 7px;
   background-color: #000000;
+  color: #000000;
 }
 
 .about-us-header {
@@ -493,7 +506,6 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 40px;
-  ;
 }
 
 .about-us-desc-advantage {
@@ -504,20 +516,27 @@ body {
   padding-top: 12px;
 }
 
+.about-us-desc-list li {
+  padding-top: 19px;
+}
+
+
+.about-us-desc-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #FFC700;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 26px;
+}
+
 .about-us-desc-list {
   display: inline-block;
   margin: 0;
   padding: 0;
-  padding-left: 22px;
-  padding-top: 11px;
-  color: #FFC700;
-}
-
-.about-us-desc-list li {
-  margin: 0;
-  padding: 0;
-  padding-left: 17px;
-  padding-top: 19px;
+  list-style-type: none;
+  margin-top: 11px;
 }
 
 .about-us-desc-list li span {
@@ -540,7 +559,7 @@ body {
   background-color: #FFE17F;
   border: 0;
   cursor: pointer;
-  margin-top: 46px;
+  margin-top: 48px;
 }
 
 .delivery-on-order {
@@ -649,7 +668,7 @@ body {
 }
 
 .subscribe-field {
-  display:block;
+  display: block;
   font-family: "Rubik", sans-serif;
   padding: 0;
   margin: 0;
@@ -816,17 +835,17 @@ body {
 }
 
 .subscribe-button {
-  display:block;
+  display: block;
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  border:3px solid #C4C4C4;
+  border: 3px solid #C4C4C4;
   width: 253px;
   height: 57px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .subscribe-checkbox-free {
@@ -834,8 +853,8 @@ body {
   margin-left: 186px;
   height: 14px;
   width: 14px;
-  background-image:url("../images/subscribe-checkbox.svg");
-  background-repeat:no-repeat;
+  background-image: url("../images/subscribe-checkbox.svg");
+  background-repeat: no-repeat;
 }
 
 .subscribe-is-free {
@@ -877,6 +896,7 @@ body {
 
 .footer-address {
   width: 290px;
+  padding-bottom: 77px;
 }
 
 .footer-address-desc {
@@ -886,15 +906,18 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding-top: 26px;
-  padding-bottom: 65px;
+  padding-bottom: 62px;
 }
 
 .footer-horizontal-bar {
   display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
   width: 80px;
   height: 7px;
-  padding-bottom: 77px;
-  background-image: url("../images/footer-horizontal-bar.svg");
+  background-color: #FFC500;
+  color: #FFC500;
   background-repeat: no-repeat;
 }
 
@@ -1019,25 +1042,39 @@ body {
 }
 
 .catalog-divider {
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
   width: 200px;
   height: 2px;
   background-color: #000000;
-  margin-left: 60px;
-  margin-top: 59px;
+  color: #000000;
+  margin-left: 61px;
+  margin-top: 57px;
 }
 
 .catalog-divider-two {
+  display: block;
+  padding: 0;
+  margin: 0;
   width: 200px;
   height: 3px;
   background-color: #000000;
+  color: #000000;
   margin-top: 94px;
 }
 
 .catalog-divider-three {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
   width: 200px;
   height: 3px;
   background-color: #000000;
-  margin-top: 33px;
+  color: #000000;
+  margin-top: 31px;
 }
 
 .catalog-products-show-sorting-wrapper {
@@ -1261,23 +1298,23 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-left:150px;
+  padding-left: 150px;
   list-style-type: none;
   width: 760px;
   height: 71px;
   color: #444444;
 }
 
-.catalog-products-pagination-item{
+.catalog-products-pagination-item {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 
 }
 
 .catalog-products-pagination-link {
-  padding-left:15px;
-  padding-right:15px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1286,18 +1323,22 @@ body {
   color: #000000;
 }
 
-.catalog-products-pagination-prev{
+.catalog-products-pagination-prev {
   padding-left: 5px;
+  text-decoration: none;
+  color: #000000;
 }
 
-.catalog-products-pagination-next{
-  padding-right:10px;
+.catalog-products-pagination-next {
+  padding-right: 10px;
+  text-decoration: none;
+  color: #000000;
 }
 
 /* надпись назад  и вперед */
 .catalog-products-pagination-prev,
 .catalog-products-pagination-next {
-  width:250px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1370,7 +1411,11 @@ body {
 }
 
 .promo {
+  display: block;
+  padding: 0;
+  margin: 0;
   width: 600px;
+  height: 600px;
   margin-top: -270px;
 }
 
@@ -1383,7 +1428,7 @@ body {
   padding-left: 25px;
   justify-content: space-between;
   width: 541px;
-  padding-top: 331px;
+  margin-top: 331px;
 }
 
 .promo-slider-image {
