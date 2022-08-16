@@ -185,6 +185,20 @@ body {
   position: absolute;
   margin-top: -20px;
   margin-left: 60px;
+  fill:rgba(0, 0, 0, 1);
+}
+
+.header-logo-device:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  fill:rgba(0, 0, 0, 1);
+}
+
+.header-logo-device:hover {
+  fill:rgba(0, 0, 0, 0.6);
+}
+
+.header-logo-device:active {
+  fill:rgba(0, 0, 0, 0.1);
 }
 
 .link-decoration {
@@ -979,6 +993,25 @@ body {
 .footer-address {
   width: 290px;
   padding-bottom: 77px;
+}
+
+.footer-address svg,
+.footer-address:focus svg {
+  fill:rgba(255, 199, 0, 1);
+}
+.footer-address:focus svg {
+  outline: 2px solid #ffffff;
+  fill:rgba(255, 199, 0, 1);
+}
+
+.footer-address:hover svg{
+  fill:rgba(255, 199, 0, 0.6);
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.footer-address:active svg{
+  fill:rgba(255, 199, 0, 0.3);
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .footer-address-desc {
