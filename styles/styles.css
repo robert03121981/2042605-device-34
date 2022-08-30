@@ -134,8 +134,8 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
   padding-top: 66px;
   padding-left: 40px;
   gap: 40px;
@@ -145,8 +145,8 @@ body {
 .catalog-products-show-item {
   display: block;
   flex-direction: column;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
   padding-top: 4px;
 }
 
@@ -154,7 +154,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  padding-top: 34px;
+  padding-top: 32px;
   justify-content: space-between;
 }
 
@@ -177,10 +177,9 @@ body {
   padding-right: 65px;
 }
 
-
 .delivery-guarantee-credit-color {
   padding-top: 70px;
-  background: linear-gradient(to top, #F0F0F0 62%, #ffffff 50%);
+  background: linear-gradient(to top, #F0F0F0 286px, #ffffff 50%);
   padding-bottom: 72px;
 }
 
@@ -570,28 +569,21 @@ body {
   cursor: pointer;
 }
 
-
 .yellow-btm:hover {
   height: 40px;
   background-color: rgba(255, 225, 127, 1);
-  color: rgba(0, 0, 0, 1);
-  z-index: 1;
+}
+
+.yellow-btm span:active {
+  height: 40px;
+  background-color: rgba(255, 204, 51, 1)
 }
 
 .yellow-btm:active {
   height: 40px;
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 204, 51, 1);
+  background-color: rgba(255, 204, 51, 1)
 }
 
-.yellow-btm:active {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 40px;
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 204, 51, 1);
-}
 
 .yellow-btm:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
@@ -599,14 +591,11 @@ body {
 
 .yellow-btm span:focus-visible {
   height: 8px;
-  color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 225, 127, 1);
 }
 
-
 .yellow-btm:disabled {
   height: 8px;
-  color: rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 225, 127, 1);
 }
 
@@ -631,33 +620,34 @@ body {
 }
 
 .delivery-guarantee-credit-btm li:nth-child(2) {
-  padding-top: 51px;
+  padding-top: 32px;
 }
 
 .delivery-guarantee-credit-btm li:nth-child(3) {
-  padding-top: 67px;
+  padding-top: 35px;
 }
 
 .term-item {
   padding: 0;
   margin: 0;
-  background-color:rgba(240, 240, 240, 1);
+  background-color: rgba(240, 240, 240, 1);
   width: 160px;
   text-decoration: none;
 }
 
 .delivery-guarantee-credit-btm-current {
-  font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 17px;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.2em;
   display: flex;
   height: 40px;
-  width: 270px;
+  width: 280px;
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 225, 127, 1);
   border: 0;
@@ -679,7 +669,7 @@ body {
 }
 
 .delivery-guarantee-credit {
-  width: 289px;
+  width: 286px;
 }
 
 .delivery-guarantee-credit-btm {
@@ -709,8 +699,8 @@ body {
   width: 455px;
   padding: 0;
   margin: 0;
-  padding-top: 36px;
-  padding-left: 115px;
+  padding-top: 34px;
+  padding-left: 117px;
 }
 
 .about {
@@ -801,8 +791,8 @@ body {
 }
 
 .more-about-us-btm {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   width: 270px;
   margin-top: 48px;
 }
@@ -884,8 +874,8 @@ body {
 }
 
 .write-to-us-btm {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   width: 259px;
   margin-top: 45px;
 }
@@ -1008,66 +998,59 @@ body {
   justify-content: space-between;
 }
 
-.catalog-group-item {
-  display: flex;
-  padding: 0;
-  padding: 0;
-  background-color: rgba(255, 225, 127, 1);
-  width: 160px;
-  height: 160px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 33px;
-}
-
-.catalog-group-monopod {
-  align-items: end;
-}
-
-.catalog-group-item:focus-visible {
+.catalog-group-item-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
-  background-color: rgba(255, 225, 127, 1);
-}
-
-.catalog-group-link:focus-visible {
-  outline: 2px solid rgba(175, 79, 255, 1);
-  color: rgba(0, 0, 0, 1);
-}
-
-.catalog-group-link svg:focus-visible {
-  color: rgba(0, 0, 0, 1);
 }
 
 .catalog-group-item-link {
+  display:block;
+  width: 160px;
+  height: 253px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+  letter-spacing: -0.02em;
   color: rgba(0, 0, 0, 1);
+  background-color:rgba(255 ,255, 255, 1);
 }
 
-.catalog-group-item-link svg,
+.catalog-group-item {
+  display: flex;
+  width:160px;
+  height:160px;
+  justify-content: center;
+  align-items:center;
+}
+
+.catalog-group-monopod {
+  align-items:flex-end;
+}
+
+
 .catalog-group-item-link,
-.catalog-group-item-link svg:hover,
-.catalog-group-item-link:hover {
-  color: rgba(0, 0, 0, 1);
+.catalog-group-item-link:focus,
+.catalog-group-item-link:active{
+  background-color:rgba(255, 225, 127, 1);
 }
 
-.catalog-group-item:hover {
-  background-color: rgba(255, 199, 0, 1);
+.catalog-group-item-link:hover{
+  background-color:rgba(255, 199, 0, 1);
 }
 
-.catalog-group-item:active {
-  background-color: rgba(255, 225, 127, 1);
+.catalog-group-item-link:focus-visible{
+  background-color:rgba(255, 225, 127, 1);
+  outline: rgba(2px solid rgba(175, 79, 255, 1));
 }
 
-.catalog-group-item-link:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.catalog-group-item-link svg:active {
-  color: rgba(0, 0, 0, 0.3);
+.catalog-group-item-link p{
+  color:rgba( 0, 0, 0, 1);
+  padding:0;
+  margin:0;
+  padding-top:33px;
+  background-color:rgba( 255, 255, 255, 1);
+  padding-bottom: 38px;
 }
 
 .delivery-on-order-title {
@@ -1424,6 +1407,14 @@ body {
   background-color: #ffffff;
 }
 
+.catalog-products-show-picture-link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .catalog-products-show-picture {
   display: block;
 }
@@ -1777,11 +1768,11 @@ body {
 }
 
 .catalog-products-filter-group-btm {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   margin-top: 53px;
   width: 220px;
-  background-color:rgba(240, 240, 240, 1);
+  background-color: rgba(240, 240, 240, 1);
 }
 
 .catalog-products-filter-form {
@@ -1816,11 +1807,6 @@ body {
   line-height: 20px;
   padding: 0;
   margin: 0;
-}
-
-.catalog-products-show-title-link {
-  text-decoration: none;
-  color: #000000;
 }
 
 .catalog-products-show-price-title {
